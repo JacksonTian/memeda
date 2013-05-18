@@ -37,6 +37,16 @@ var api = function (param, callback) {
 };
 ```
 
+或者更简单:
+
+```
+async(param, memeda(callback, function (data) {
+  // 对返回结果进行加工
+  var ret = data.toString();
+  callback(null, ret);
+});
+```
+
 ## 备注
 - `failing`与`passing`总是成对出现
 
