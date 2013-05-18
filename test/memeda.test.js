@@ -39,4 +39,13 @@ describe('memeda', function () {
     var callback = memeda.failing(done).passing(handler);
     callback(null, {'module': 'memeda'});
   });
+
+  it('memeda', function (done) {
+    var handler = function (data) {
+      data.should.have.property('module', 'memeda');
+      done();
+    };
+    var callback = memeda(done, handler);
+    callback(null, {'module': 'memeda'});
+  });
 });

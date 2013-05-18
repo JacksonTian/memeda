@@ -1,7 +1,7 @@
 {
   "name": "memeda",
-  "version": "0.0.1",
-  "description": "Graceful Callback",
+  "version": "0.0.2",
+  "description": "More graceful callback",
   "main": "index.js",
   "directories": {
     "example": "example"
